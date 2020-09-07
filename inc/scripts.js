@@ -74,7 +74,7 @@ const playGame = () => {
     guessBox.focus();
   } else {
     const userInput = guessBox.value;
-    if (userInput === randWord) {
+    if (userInput.toLowerCase() === randWord) {
       play = false;
       currentScore.innerHTML = ++score;
       msg.innerHTML = "Your answer is correct";
