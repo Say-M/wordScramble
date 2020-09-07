@@ -5,34 +5,35 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  font-size: 62.5%;
+}
 body {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 header {
-  height: 15vh;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #2c3e50;
 
   h1 {
+    text-align: center;
     color: #fff;
+    padding: 1.5rem 0;
+    font-size: 3.5rem;
     text-transform: uppercase;
     font-family: "Grandstander", cursive;
   }
 }
 
 .scoreUpdate {
+  width: 100%;
   color: #ffd28f;
   display: flex;
   justify-content: space-evenly;
   background-color: #34495e;
-  height: 2vh;
-  padding-top: 8px;
+  padding: 3rem 0;
 
   // .lives {
   //   background-color: #ffdca8;
@@ -61,42 +62,41 @@ header {
 }
 
 main {
-  height: 73vh;
+  padding: 0 0 4rem 0;
   background-color: #34495e;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
-
   .center {
     width: 65%;
-    height: 350px;
+    min-height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: #2c3e5070;
-    border-radius: 10px;
-    box-shadow: 0 7px 12px #00000040, 0 -7px 12px #00000040;
+    border-radius: 1rem;
+    box-shadow: 0 0.7rem 1.2rem #00000040, 0 -0.7rem 1.2rem #00000040;
 
     .msg {
-      font-size: 1.1rem;
+      font-size: 1.6rem;
       color: #fff;
-      margin: 25px 0;
+      margin: 2.5rem 0;
     }
 
     .guess-box {
       outline: none;
       border: none;
-      padding: 10px 2px;
+      padding: 1rem 0.2rem;
       text-align: center;
       width: 55%;
       background-color: #dbebff;
-      border-radius: 12px;
-      margin-bottom: 15px;
+      border-radius: 1.2rem;
+      margin-bottom: 1.5rem;
       transition: 0.2s;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
     }
 
     .guess-box:focus {
@@ -109,13 +109,13 @@ main {
     }
 
     .btn {
-      padding: 10px 8px;
-      margin: 15px 0 25px 0;
+      padding: 1rem 0.8rem;
+      margin: 1.5rem 0 2.5rem 0;
       border: none;
       outline: none;
       color: #333;
-      font-size: 1.3rem;
-      border-radius: 5px;
+      font-size: 1.8rem;
+      border-radius: 0.5rem;
       background-color: #ffdca8;
       font-weight: 700;
       cursor: pointer;
@@ -125,23 +125,31 @@ main {
     .btn:active,
     .btn:focus-within {
       background-color: #ffd28f;
-      box-shadow: 0 0 8px #ffb84e;
+      box-shadow: 0 0 0.8rem #ffb84e;
     }
   }
 }
 
 footer {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #a8a8a8;
   background-color: #1b2631;
+  text-align: center;
+  padding: 2rem 0;
 
   a {
     color: #fff;
     text-decoration: none;
-    margin-left: 5px;
-    font-weight: 400;
+    margin-left: 0.5rem;
+    font-weight: 600;
+  }
+}
+@media (max-width: 998px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 40%;
   }
 }
