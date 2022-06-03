@@ -1,11 +1,11 @@
-//Selecting importent tags
+//Selecting important tags
 const msg = document.querySelector(".msg");
 const guessBox = document.querySelector(".guess-box");
 const btn = document.querySelector(".btn");
 const currentScore = document.querySelector(".currentScore");
 const lives = document.querySelector(".lives");
 
-//Importent variables
+//Important variables
 let play = false;
 const scrWords = [
   "complete",
@@ -101,7 +101,7 @@ const playGame = () => {
   }
 };
 
-//Eventlistener
+//EventListener
 btn.addEventListener("click", playGame);
 document.addEventListener("keypress", (evt) => {
   if (evt.key === "Enter") {
